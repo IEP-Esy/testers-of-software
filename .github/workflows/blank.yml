@@ -31,9 +31,8 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-      - name: Coveralls GitHub Action
-       uses: coverallsapp/github-action@v2.2.3
             
         run: |
+          github-token=I6afgbZcq8FOdJJpiAmnAehdUrBdDNHfY
           echo Add other actions to build,
           echo test, and deploy your project.
