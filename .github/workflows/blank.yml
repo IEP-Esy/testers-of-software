@@ -33,6 +33,5 @@ jobs:
       - name: Run a multi-line script
             
         run: |
-          github-token=I6afgbZcq8FOdJJpiAmnAehdUrBdDNHfY
           echo Add other actions to build,
           echo test, and deploy your project.
