@@ -26,7 +26,6 @@ describe('isObject function', () => {
         expect(result).toBe(false);
     });
 
-
     test('returns true for a custom object instance', () => {
         class CustomObject { }
         const result = isObject(new CustomObject());
