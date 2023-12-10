@@ -1,6 +1,6 @@
 import add from '../src/add';
 
-describe('add', () => {
+describe('add method', () => {
   // Test with legal positive values
   test('adds two positive numbers', () => {
     expect(add(3, 4)).toBe(7);
@@ -35,7 +35,7 @@ describe('add', () => {
   test('handles undefined values with default value', () => {
     expect(add(undefined, 5)).toBe(5);
     expect(add(3, undefined)).toBe(3);
-  }); 
+  });
 
   // Test with one null parameter
   test('adds null + 0 to equal 0', () => {
@@ -58,7 +58,7 @@ describe('add', () => {
   // test with objects for parameters
   test('returns NaN for object values', () => {
     const object1 = { name: 'test1', value: 3 };
-    const object2 = { name: 'test2', value: 5 };;
+    const object2 = { name: 'test2', value: 5 };
     expect(add(object1, 10)).toBe(NaN);
     expect(add(20, object2)).toBe(NaN);
   });
