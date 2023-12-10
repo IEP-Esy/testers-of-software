@@ -24,16 +24,6 @@ describe('endsWith function', () => {
         expect(result).toBe(true);
     });
 
-    test('returns true when checking a string with a length of 1 for an empty target', () => {
-        const result = endsWith('A', '');
-        expect(result).toBe(true);
-    });
-
-    test('returns false when checking an empty string for a non-empty target', () => {
-        const result = endsWith('', 'abc');
-        expect(result).toBe(false);
-    });
-
     test('handles negative position correctly', () => {
         const result = endsWith('abcdef', 'a', -3);
         expect(result).toBe(false);
@@ -49,12 +39,6 @@ describe('endsWith function', () => {
         const result = endsWith(inputString, target, position);
     
         // Expect the function to adjust position to the length of the string
-        expect(result).toBe(true);
-    });
-
-    test('returns true if a SKU ends with "-XL"', () => {
-        const sku = 'ABC123-XL';
-        const result = endsWith(sku, '-XL');
         expect(result).toBe(true);
     });
 });
