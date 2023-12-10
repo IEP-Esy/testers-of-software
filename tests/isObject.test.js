@@ -1,6 +1,6 @@
 import isObject from '../src/isObject';
 
-describe('isObject function', () => {
+describe('isObject method', () => {
     test('returns true for an object literal', () => {
         const result = isObject({});
         expect(result).toBe(true);
